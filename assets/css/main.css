@@ -615,28 +615,47 @@ section {
   text-align: center;
 }
 
+.featured-services .card{
+  font-family: var(--font-primary);
+}
+
+.featured-services .card{
+  font-family: var(--font-primary);
+}
+
+.featured-services .card span{
+  display: flex;
+  font-size: 16px;
+  font-style: normal;
+  color: white;
+  font-family: var(--font-secondary);
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0.8px;
+}
+
+.featured-services .card h5{
+  font-weight: 800;
+  font-size: 38px;
+  color:white;
+  text-align: start;
+}
+
 .featured-services .rumah-pelita-article .article-part .card-img-top{
   border-radius: 0px 0px 20px 20px;
 }
 
 .featured-services .rumah-pelita-article .article-part .card-body{
-  padding : 50px 32px 50px 40px;
-  align-items: flex-start;
+  display:inline-flex;
   flex-direction: column;
-  justify-content:center;
+  justify-content: center;
+  align-items: flex-start;
+  padding-right:40px;
+  padding-left: 32px;
+  padding-bottom:50px;
   border-radius: 0px 0px 20px 20px;
   background: rgba(13, 89, 218, 0.65);
   backdrop-filter: blur(12.5px);
-}
-
-.featured-services .rumah-pelita-article .article-part .card-body h5{
-  color: var(--light, #FFF);
-  font-family: Urbanist;
-  font-size: 38px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
-  
 }
 
 #tabs{
@@ -689,7 +708,7 @@ section {
   letter-spacing: 0.8px;
 }
 
-.featured-services h5{
+.featured-services .header-section{
   padding: 0;
   font-size: 20px;
   letter-spacing: 1px;
