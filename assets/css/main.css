@@ -1045,17 +1045,55 @@ section {
   text-transform: uppercase;
 }
 
-
-.articles.rumah-pelita-article{
+.articles .rumah-pelita-article{
+  align-items: center;
   padding-bottom: 5rem;
   text-align: center;
 }
 
-
 .articles .rumah-pelita-article .spark-image{
-  left:0;
+  top:50px;
+  right: 335px;
   bottom: 0;
   position: relative;
+}
+
+
+.articles .header-section{
+  padding: 0;
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #EA5455;
+  font-weight: 700;
+  word-wrap: break-word;
+}
+
+.articles h3{
+  padding: 0;
+  font-size: 40px;
+  line-height: 50px;
+  color: #151C43;
+  font-family: var(--font-secondary);
+  font-weight: 600;
+  word-wrap: break-word;
+}
+
+.articles .btn-outline {
+  width: 250px;
+  border-color: var(--color-primary);
+  padding: 16px 30px;
+  font-size:20px;
+  color : var(--color-primary);
+  font-family: var(--font-primary);
+  font-weight: 700;
+  border-radius: 100px;
+}
+
+.articles .btn-outline:hover {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  color:white;
 }
 
 
