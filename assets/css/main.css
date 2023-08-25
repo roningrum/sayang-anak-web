@@ -1518,18 +1518,39 @@ section {
   margin-bottom: 10px;
 }
 
+.faq .accordion-header h3{
+  /* padding: 15px 30px 20px 60px; */
+  color: #000;
+  font-family: Urbanist;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1px;
+}
+
+.faq .accordion-body{
+   /* padding: 15px 30px 20px 60px; */
+  color: #626262;
+  font-family: Outfit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 187.5% */
+  letter-spacing: 0.8px;
+}
+
 .faq .accordion-collapse {
   border: 0;
 }
 
 .faq .accordion-button {
-  padding: 15px 30px 20px 60px;
+  /* padding: 15px 30px 20px 60px; */
   font-weight: 600;
   border: 0;
   font-size: 18px;
   color: var(--color-default);
   text-align: left;
-  background: rgba(14, 29, 52, 0.03);
   border-radius: 5px;
 }
 
@@ -1538,23 +1559,17 @@ section {
 }
 
 .faq .accordion-button:not(.collapsed) {
-  color: var(--color-primary);
+  /* color: var(--color-primary); */
   border-bottom: 0;
   box-shadow: none;
 }
 
 .faq .accordion-button:after {
+  color: var(--color-primary);
   position: absolute;
   right: 15px;
   top: 15px;
 }
-
-/* .faq .accordion-body {
-  padding: 0 30px 25px 60px;
-  border: 0;
-  background: rgba(14, 29, 52, 0.03);
-  border-radius: 5px;
-} */
 
 /*--------------------------------------------------------------
 # Testimonials Section
@@ -2321,9 +2336,13 @@ section {
 --------------------------------------------------------------*/
 .footer {
   font-size: 14px;
+  /* height:100vh; */
   background-color: var(--color-secondary);
-  padding: 50px 0;
+  padding: 60px 0 0 0;
   color: white;
+}
+.footer .footer-info{
+  margin-bottom: 25px;
 }
 
 .footer .footer-info .logo {
@@ -2337,7 +2356,7 @@ section {
 }
 
 .footer .footer-info .logo span {
-  font-size: 30px;
+  font-size: 28px;
   font-weight: 700;
   letter-spacing: 1px;
   color: #fff;
@@ -2345,8 +2364,23 @@ section {
 }
 
 .footer .footer-info p {
+  color: #FFF;
+  font-family: Outfit;
   font-size: 14px;
-  font-family: var(--font-primary);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.8rem ;
+  /* letter-spacing: 0.16px; */
+}
+
+.footer .footer-info p {
+  color: #FFF;
+  font-family: Outfit;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.8rem ;
+  /* letter-spacing: 0.16px; */
 }
 
 .footer .social-links a {
@@ -2355,11 +2389,13 @@ section {
   justify-content: center;
   width: 40px;
   height: 40px;
-  border-radius: 50%;
+  border-radius: 5px;
+  gap: 10px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   font-size: 16px;
+  background: #393653;
   color: rgba(255, 255, 255, 0.7);
-  margin-right: 10px;
+  margin-right: 15px;
   transition: 0.3s;
 }
 
@@ -2369,8 +2405,12 @@ section {
 }
 
 .footer h4 {
-  font-size: 16px;
-  font-weight: bold;
+  color: #FFF;
+  font-family: Outfit;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
   position: relative;
   padding-bottom: 12px;
 }
@@ -2385,11 +2425,62 @@ section {
   margin: 0;
 }
 
+.footer .footer-contact ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer .footer-contact ul li {
+  display: flex;
+  align-items: center;
+  color: #FFF;
+  font-family: Outfit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.footer .footer-contact ul i {
+  gap: 10px;
+  margin: auto;
+}
+
+.footer .footer-contact ul li {
+  /* padding: 10px 0; */
+  display: flex;
+  align-items: center;
+}
+
+.footer .footer-contact ul li a {
+  color: #FFF;
+  font-family: Outfit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 38px; /* 237.5% */
+}
+
+
+
+
 .footer .footer-links ul i {
   padding-right: 2px;
   color: rgba(13, 66, 255, 0.8);
   font-size: 12px;
   line-height: 0;
+}
+
+.footer .footer-links ul li {
+  display: flex;
+  align-items: center;
+  color: #FFF;
+  font-family: Outfit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .footer .footer-links ul li {
@@ -2405,7 +2496,7 @@ section {
 .footer .footer-links ul a {
   color: rgba(255, 255, 255, 0.6);
   transition: 0.3s;
-  display: inline-block;
+  display: inline;
   line-height: 1;
 }
 
@@ -2414,11 +2505,12 @@ section {
 }
 
 .footer .footer-contact p {
-  line-height: 26px;
-}
-
-.footer .copyright {
-  text-align: center;
+  color: #FFF;
+  font-family: Outfit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .footer .credits {
@@ -2429,4 +2521,24 @@ section {
 
 .footer .credits a {
   color: #fff;
+}
+
+.footer .copyright-footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #2C387B;
+  gap: 10px;
+  flex-shrink: 0;
+  padding: 10px;
+}
+
+.footer .copyright {
+  color: #FFF;
+  font-family: Outfit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal; /* height:100vh; */
+  text-align: center;
 }
