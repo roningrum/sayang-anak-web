@@ -136,29 +136,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
   new Swiper('.articles-swiper', {
     slidesPerView : 4,
-    spaceBetweent : 30,
     loop: true,
-    grabCursor: 'true',
+    // slidesPerView: 'auto',
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+    },
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
-      // dynamicBullets: true,
+      dynamicBullets: true,
     },
-  //   breakpoints:{
-  //     0: {
-  //         slidesPerView: 1,
-  //     },
-  //     520: {
-  //         slidesPerView: 2,
-  //     },
-  //     950: {
-  //         slidesPerView: 3,
-  //     },
-  // },
-  //   // navigation: {
-    //   nextEl: '.swiper-button-next',
-    //   prevEl: '.swiper-button-prev',
-    // }
+    
   });
 
   /**
