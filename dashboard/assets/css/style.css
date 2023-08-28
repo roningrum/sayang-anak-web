@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&family=Urbanist&display=swap');
+
+:root {
+  --font-primary: 'Urbanist', sans-serif;
+  --font-secondary: 'Outfit', sans-serif;
+}
+
+/* Colors */
+:root {
+  --color-default: #0a0d13;
+  --color-primary: #5A8DEE;
+  --color-secondary: #151C43;
+  --color-success: #39DA8A;
+  --color-warning: #FDAC41;
+  --color-danger: #EA5455;
+  --color-dark : #516377;
+  --label-primary:#E5EDFC;
+  --label-secondary: #E8EAF8;
+  --label-success:#DFF9EC;
+  --label-warning:#FFF2E1;
+  --label-danger:#FCE4E4;
+  --label-dark:#E2E4E6;
+  --gray:#8F8F8F;
+  --gray-92:#EAEAEA;
+  --light:#FFFFFF;
+  --light-96:#F6F6F6;
+}
+
+/* Smooth scroll behavior */
+:root {
+  scroll-behavior: smooth;
+}
+
+/* style body */
+
+body{
+  background-color: #FBDCB7;
+  margin: 0;
+  /* height:100%; */
+}
+
+/* Login Page */
+
+.container{
+    display:flex;
+    height: 100%;
+    align-items: center;
+    justify-content:center;
+}
+.login-page{
+    background:url("../img/background.png") no-repeat center center fixed;
+    height: 100vh;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.login-page{
+    gap: 50px;
+}
+
+.login-page .card{
+    padding : 50px;
+}
+
+.login-page .card-title{
+    gap:10px;
+}
+
+.login-page .card-subtitle{
+    gap:10px;
+}
+
+.login-page h4{
+    font-family: var(--font-primary);
+    color: #516377;
+    font-size: 1.6875rem;
+    font-weight: 700;
+}
+
+.login-page h6{
+    font-family: var(--font-secondary);
+    font-size: 1.125rem;
+
+}
