@@ -51,6 +51,7 @@ body {
   font-family: var(--font-default);
   color: var(--color-default);
   margin: 0;
+  height:100%;
   /* background-color:#FDF3F0 ; */
   background-image: url("../img/background.png");
   background-size: contain;
@@ -457,6 +458,7 @@ section {
   }
 }
 
+
 @media (min-width: 1280px) and (max-width: 1366px) {
   .navbar .dropdown .dropdown ul {
     left: -90%;
@@ -604,6 +606,10 @@ section {
 /*--------------------------------------------------------------
 # Featured Services Section
 --------------------------------------------------------------*/
+
+.featured-services .container-fluid{
+  background:white;
+}
 .featured-services .rumah-pelita-article{
   align-items: center;
   padding-bottom: 5rem;
@@ -1063,8 +1069,9 @@ section {
   text-transform: uppercase;
 }
 
-.article{
-  padding: 0 40px;
+.articles{
+  padding: 40px;
+  background-color: #FDF3F0;
 }
 
 .articles .rumah-pelita-article{
@@ -1194,6 +1201,10 @@ section {
   }
   .swiper-slide{
     padding: 0;
+  }
+
+  .hero .container{
+    height: 100vh;
   }
 }
 
@@ -2258,9 +2269,10 @@ section {
 }
 
 .hero .container{
-  height: 70vh;
+  /* height: 70vh; */
   width: 100% !important;
-  /* height: auto !important; */
+  /* min-height: 90%; */
+  height: 100vh;
   position: relative;
 }
 
@@ -2313,7 +2325,32 @@ section {
     width: 100px;
     height: 0px;
   }
+
 }
+
+@media only screen and (min-device-width: 1280px){
+  .hero .container{
+    width: 100% !important;
+    height: 65vh;
+    position: relative;
+  }
+}
+
+@media only screen and (min-device-width: 1400px){
+  .hero .container{
+    width: 100% !important;
+    height: 50vh;
+    position: relative;
+  }
+
+  body{
+    /* background-image: url("../img/background.png"); */
+    background-size: contain;
+    background-repeat: round;
+    /* background-repeat: no-repeat; */
+  }
+}
+
 
 .hero p {
   font-size:1.35em;
@@ -2406,6 +2443,23 @@ section {
   background-color: var(--color-secondary);
   color: white;
 }
+
+.footer-content{
+  background-image:url("../img/icon/footer-area.png");
+  background-repeat:no-repeat;
+  background-position-x: right;
+}
+
+.footer-content{
+  padding: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: flex-start;
+  row-gap: 55px;
+  flex-wrap: wrap;
+}
+
 .footer .footer-info{
   margin-bottom: 25px;
 }
